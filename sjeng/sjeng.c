@@ -873,7 +873,7 @@ int main (int argc, char *argv[]) {
 	continue;
       }
       else if (!strncmp (input, "sd", 2)) {
-	sscanf(input, "%d", &maxdepth);
+	sscanf(input + 3, "%d", &maxdepth);
 	printf("New max depth set to: %d\n", maxdepth);
 	continue;
       }
